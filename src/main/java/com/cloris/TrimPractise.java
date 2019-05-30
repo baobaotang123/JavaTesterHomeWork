@@ -3,7 +3,7 @@ package com.cloris;
 
 import java.util.Scanner;
 
-import static jdk.nashorn.internal.objects.NativeString.substring;
+//import static jdk.nashorn.internal.objects.NativeString.substring;
 
 public class TrimPractise {
 
@@ -30,7 +30,7 @@ public class TrimPractise {
         while ((st < len) && (stringArray[st] <= ' ')) {
             st++;
         }
-        return (st > 0) ? substring(st, len) : str;
+        return (st > 0) ? str.substring(st, len) : str;
     }
 
     public static String rightDrop(String str){
@@ -41,7 +41,7 @@ public class TrimPractise {
         while((st < len) && (stringArray[len-1]<=' ')){
             len--;
         }
-        return (len < stringArray.length) ? substring(0,len):str;
+        return (len < stringArray.length) ? str.substring(0,len):str;
 
     }
 
